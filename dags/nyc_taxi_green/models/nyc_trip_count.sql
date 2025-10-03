@@ -7,7 +7,7 @@ with new_york_taxis as (
        CAST(lpepPickupDatetime AS DATE) AS trip_date,
        COUNT(*) AS trip_count
      FROM
-         [taxi].[dbo].[nyctlc]
+         [NYC Taxi-Green].[dbo].[nyctlc]
      GROUP BY
          vendorID,
          CAST(lpepPickupDatetime AS DATE)
